@@ -1,0 +1,5 @@
+{
+    "require": {
+        "tobento/service-acl": "^1.0"
+    }
+}

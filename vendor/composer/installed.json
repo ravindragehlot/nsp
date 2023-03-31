@@ -1,0 +1,174 @@
+{
+    "packages": [
+        {
+            "name": "psr/container",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "time": "2021-11-05T16:47:00+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "install-path": "../psr/container"
+        },
+        {
+            "name": "tobento/service-acl",
+            "version": "1.0.6",
+            "version_normalized": "1.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tobento-ch/service-acl.git",
+                "reference": "539ffe73406220ce08594b76040691695baf4374"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tobento-ch/service-acl/zipball/539ffe73406220ce08594b76040691695baf4374",
+                "reference": "539ffe73406220ce08594b76040691695baf4374",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "psr/container": "^1.0 || ^2.0",
+                "tobento/service-helper-function": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vimeo/psalm": "^4.0"
+            },
+            "time": "2023-03-07T16:04:30+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Tobento\\Service\\Acl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Strub",
+                    "email": "info@tobento.ch",
+                    "homepage": "https://www.tobento.ch"
+                }
+            ],
+            "description": "A simple role and user-level access control system.",
+            "homepage": "https://www.tobento.ch",
+            "keywords": [
+                "acl",
+                "package",
+                "tobento"
+            ],
+            "support": {
+                "issues": "https://github.com/tobento-ch/service-acl/issues",
+                "source": "https://github.com/tobento-ch/service-acl/tree/1.0.6"
+            },
+            "install-path": "../tobento/service-acl"
+        },
+        {
+            "name": "tobento/service-helper-function",
+            "version": "1.0.3",
+            "version_normalized": "1.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tobento-ch/service-helper-function.git",
+                "reference": "966e3378567f84159f0d749afb4d76a6d32cb93a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tobento-ch/service-helper-function/zipball/966e3378567f84159f0d749afb4d76a6d32cb93a",
+                "reference": "966e3378567f84159f0d749afb4d76a6d32cb93a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "psr/container": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vimeo/psalm": "^4.0"
+            },
+            "time": "2021-06-16T10:40:58+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Tobento\\Service\\HelperFunction\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Strub",
+                    "email": "info@tobento.ch",
+                    "homepage": "https://www.tobento.ch"
+                }
+            ],
+            "description": "Support for helper functions management.",
+            "homepage": "https://www.tobento.ch",
+            "keywords": [
+                "function",
+                "helper",
+                "package",
+                "tobento"
+            ],
+            "support": {
+                "issues": "https://github.com/tobento-ch/service-helper-function/issues",
+                "source": "https://github.com/tobento-ch/service-helper-function/tree/1.0.3"
+            },
+            "install-path": "../tobento/service-helper-function"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
