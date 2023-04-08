@@ -23,7 +23,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		if (password_verify($passwd, $db_password)) {
 
 			$_SESSION['user_logged_in'] = TRUE;
-			$_SESSION['admin_type'] = $row[0]['admin_type'];
+			$_SESSION['admin_type'] = $row[0]['user_type'];
+			$_SESSION['user_id'] = $row[0]['id'];
+			
+			if($_SESSION['admin_type'] == 3){
+			$db1 = getDbInstance();
+			$db1->where("user_id", $_SESSION['user_id']);
+			$company = $db1->get('company_details');
+			
+			if ($db1->count >= 1) {
+			$_SESSION['company_name'] = $company[0]['company_name'];
+			$_SESSION['company_id'] = $company[0]['id'];
+			
+			}}
 
 			if ($remember) {
 

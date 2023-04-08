@@ -31,7 +31,7 @@ include_once('includes/header.php');
                         </div>
                         <div class="col-xs-9 text-right">
                             <div class="huge"><?php echo $numCustomers; ?></div>
-                            <div>Customers</div>
+                            <div></div>
                         </div>
                     </div>
                 </div>

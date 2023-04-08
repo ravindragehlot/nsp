@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once 'config/config.php';
+
+//exit;
 $token = bin2hex(openssl_random_pseudo_bytes(16));
 
 // If User has already logged in, redirect to dashboard page.
@@ -32,14 +34,15 @@ if (isset($_COOKIE['series_id']) && isset($_COOKIE['remember_token']))
 			{
 				// Remember Cookie has expired. 
 				clearAuthCookie();
-				header('Location:login.php');
-				exit;
+				//header('Location:login.php');
+				//exit;
 			}
 
 			$_SESSION['user_logged_in'] = TRUE;
-			$_SESSION['admin_type'] = $row['admin_type'];
-			header('Location:index.php');
-			exit;
+			$_SESSION['user_type'] = $row['user_type'];
+			print_r($row);
+			//header('Location:index.php');
+			//exit;
 		}
 		else
 		{
@@ -61,14 +64,15 @@ include BASE_PATH.'/includes/header.php';
 <div id="page-" class="col-md-4 col-md-offset-4">
 	<form class="form loginform" method="POST" action="authenticate.php">
 		<div class="login-panel panel panel-default">
-			<div class="panel-heading">Please Sign in</div>
+		    <div class="login_image"><img class="img-fluid" style="max-width: 98%;"src="assets/images/company_login.png"> </div>
+			<div class="panel-heading heading1_nsp">Login</div>
 			<div class="panel-body">
 				<div class="form-group">
-					<label class="control-label">username</label>
+					<label class="control-label">Email</label>
 					<input type="text" name="username" class="form-control" required="required">
 				</div>
 				<div class="form-group">
-					<label class="control-label">password</label>
+					<label class="control-label">Password</label>
 					<input type="password" name="passwd" class="form-control" required="required">
 				</div>
 				<div class="checkbox">
@@ -85,7 +89,10 @@ include BASE_PATH.'/includes/header.php';
 					?>
 				</div>
 				<?php endif; ?>
-				<button type="submit" class="btn btn-success loginField">Login</button>
+				<div style="text-align:center"><button type="submit" class="btn btn-success button_profile">Login</button>
+				<p>&nbsp;</p>
+				<a href="register_company.php" class="register"> Register </a>
+				</div>
 			</div>
 		</div>
 	</form>

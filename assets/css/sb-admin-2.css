@@ -240,6 +240,11 @@ label.error{
   /*color: #f1f1f1;*/
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
   position: absolute;
@@ -279,4 +284,58 @@ label.error{
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+.register{
+	float:right;
+}
+
+.button_profile{
+	width : 60% !important ; 
+}
+
+.pt-3, .py-3 {
+    padding-top: 1rem!important;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.35rem - 1px) calc(0.35rem - 1px) 0 0;
+}
+
+.shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.h6_heading {
+	font-weight : bold; 
+	font-size  : 16px; 
 }
